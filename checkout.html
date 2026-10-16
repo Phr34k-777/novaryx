@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commande - NOVARYX Store</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body data-page="checkout">
+<div class="topbar"><div class="container"><div class="topbar-inner"><div class="topbar-left"><span>🚀 Livraison gratuite dès 50$ &nbsp;|&nbsp; 🌍 12+ pays &nbsp;|&nbsp; ↩️ Retour 30 jours</span></div><div class="topbar-right"><div class="lang-selector" style="cursor:pointer;"><span>🇫🇷</span><span>FR</span><span>▾</span></div><select onchange="setCurrency(this.value)" style="background:rgba(255,255,255,0.15);border:none;color:rgb(114, 90, 221);font-family:var(--font-condensed);font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;outline:none;"><option value="USD">$ USD</option><option value="EUR">€ EUR</option><option value="GBP">£ GBP</option><option value="XOF">CFA XOF</option><option value="NGN">₦ NGN</option><option value="CAD">CA$</option><option value="JPY">¥ JPY</option></select><a href="account.html">Mon compte</a><a href="#">Aide</a></div></div></div></div>
+<header class="site-header"><div class="container"><div class="header-inner"><a href="index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><nav class="main-nav"><div class="nav-item"><a href="shop.html?cat=sports" class="nav-link">⚽ Sports <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Chaussures</h4><ul><li><a href="shop.html?cat=sports&q=running">Running</a></li><li><a href="shop.html?cat=sports&q=football">Football</a></li><li><a href="shop.html?cat=sports&q=basketball">Basketball</a></li></ul></div><div class="mega-menu-col"><h4>Équipements</h4><ul><li><a href="shop.html?cat=sports&q=gym">Gym</a></li><li><a href="shop.html?cat=sports&q=yoga">Yoga</a></li><li><a href="shop.html?cat=sports">Voir tout →</a></li></ul></div><div class="mega-menu-featured"><span class="badge">NOUVEAU</span><h3>Collection Pro</h3><p>Performance pour champions</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=electronics" class="nav-link">📱 Électronique <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Audio</h4><ul><li><a href="shop.html?cat=electronics&q=earbuds">Écouteurs ANC</a></li><li><a href="shop.html?cat=electronics&q=speaker">Enceintes</a></li></ul></div><div class="mega-menu-col"><h4>High-Tech</h4><ul><li><a href="shop.html?cat=electronics&q=smartwatch">Smartwatch</a></li><li><a href="shop.html?cat=electronics&q=drone">Drones</a></li><li><a href="shop.html?cat=electronics">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#0a84ff,#00D4FF);"><span class="badge" style="background:white;color:#0a84ff;">HOT 🔥</span><h3>Tech 2025</h3><p>Innovations premium</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=footwear" class="nav-link">👞 Chaussures Pro <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Pro</h4><ul><li><a href="shop.html?cat=footwear&q=medical">Médical</a></li><li><a href="shop.html?cat=footwear&q=safety">Sécurité</a></li></ul></div><div class="mega-menu-col"><h4>Élégance</h4><ul><li><a href="shop.html?cat=footwear&q=oxford">Oxford</a></li><li><a href="shop.html?cat=footwear">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#8B7355,#5C4033);"><span class="badge" style="background:gold;color:#000;">PREMIUM ✦</span><h3>Cuir Authentique</h3><p>Artisanat supérieur</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=clothing" class="nav-link">👔 Vêtements <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Business</h4><ul><li><a href="shop.html?cat=clothing&q=suit">Costumes</a></li><li><a href="shop.html?cat=clothing&q=shirt">Chemises</a></li></ul></div><div class="mega-menu-col"><h4>Casual</h4><ul><li><a href="shop.html?cat=clothing&q=hoodie">Hoodies</a></li><li><a href="shop.html?cat=clothing">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"><span class="badge" style="background:rgba(255,215,0,0.2);color:gold;border:1px solid gold;">LUXE ✦</span><h3>Mode Haute Gamme</h3><p>Matériaux nobles</p></div></div></div></div><a href="shop.html?tag=sale" class="nav-link" style="color:var(--primary);">🔥 Soldes</a></nav><div class="header-actions"><button class="search-btn" id="open-search-btn">🔍</button><a href="account.html" class="wishlist-btn" style="position:relative;">🤍<span class="badge-count wishlist-count" style="display:none;background:var(--primary);">0</span></a><a href="account.html" class="account-btn">👤</a><button class="cart-btn" id="open-cart-btn">🛒 <span>Panier</span><span class="badge-count cart-count" style="display:none;background:white;color:var(--primary);">0</span></button><button class="mobile-toggle" id="mobile-toggle"><span></span><span></span><span></span></button></div></div></div></header><div class="mobile-menu" id="mobile-menu"><nav class="mobile-nav"><a href="shop.html?cat=sports" class="mobile-nav-link">⚽ Sports</a><a href="shop.html?cat=electronics" class="mobile-nav-link">📱 Électronique</a><a href="shop.html?cat=footwear" class="mobile-nav-link">👞 Chaussures Pro</a><a href="shop.html?cat=clothing" class="mobile-nav-link">👔 Vêtements</a><a href="shop.html?tag=sale" class="mobile-nav-link" style="color:var(--primary);">🔥 Soldes</a><div style="border-top:1px solid var(--border);margin:8px 0;padding-top:8px;"><a href="account.html" class="mobile-nav-link">👤 Mon compte</a><a href="checkout.html" class="mobile-nav-link">🛒 Panier</a></div></nav></div><div class="search-overlay" id="search-overlay"><div class="container"><div class="search-bar-inner"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;"><span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);">Recherche rapide</span><button id="close-search-btn" style="cursor:pointer;font-size:18px;color:var(--text-muted);">✕</button></div><div class="search-input-wrap"><span style="font-size:20px;">🔍</span><input type="text" id="main-search-input" placeholder="Produits, marques, catégories..." autocomplete="off"><kbd style="padding:4px 8px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-muted);">ESC</kbd></div><div class="search-tags"><span style="font-size:12px;color:var(--text-muted);">Tendances:</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='running';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Running</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='earbuds';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Earbuds ANC</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='smartwatch';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Smartwatch</span></div><div id="search-results"></div></div></div></div>
+<div class="toast-container" id="toast-container"></div>
+
+<main>
+  <div style="background:var(--surface);padding:24px 0;border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>›</span>
+        <a href="shop.html">Boutique</a><span>›</span>
+        <span style="color:var(--text-primary);">Commande</span>
+      </div>
+      <div class="flex-between" style="margin-top:8px;">
+        <h1 style="font-size:32px;">🔒 Commande Sécurisée</h1>
+        <div style="display:flex;gap:12px;">
+          <span class="badge badge-success">✅ SSL Sécurisé</span>
+          <span class="badge" style="background:rgba(0,212,255,0.1);color:var(--accent);">🔐 Données chiffrées</span>
+        </div>
+      </div>
+      <!-- Steps indicator -->
+      <div style="display:flex;align-items:center;gap:0;margin-top:20px;">
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 20px 8px 8px;background:var(--primary);border-radius:4px 0 0 4px;">
+          <span style="width:24px;height:24px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--primary);">1</span>
+          <span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;color:white;">LIVRAISON</span>
+        </div>
+        <div style="width:0;height:0;border-top:20px solid transparent;border-bottom:20px solid transparent;border-left:16px solid var(--primary);"></div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 20px;background:var(--surface-2);margin-left:-1px;">
+          <span style="width:24px;height:24px;background:var(--surface-3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--text-muted);">2</span>
+          <span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;color:var(--text-muted);">PAIEMENT</span>
+        </div>
+        <div style="width:0;height:0;border-top:20px solid transparent;border-bottom:20px solid transparent;border-left:16px solid var(--surface-2);"></div>
+        <div style="display:flex;align-items:center;gap:8px;padding:8px 20px;background:var(--surface-2);">
+          <span style="width:24px;height:24px;background:var(--surface-3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--text-muted);">3</span>
+          <span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;color:var(--text-muted);">CONFIRMATION</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="checkout-form-section">
+      <div class="checkout-layout">
+        <!-- MAIN FORM -->
+        <div class="checkout-main">
+          <form id="checkout-form">
+            <!-- Shipping -->
+            <div class="checkout-section">
+              <div class="checkout-section-header">
+                <div class="checkout-step-num">1</div>
+                <h3>Informations de livraison</h3>
+              </div>
+              <div class="checkout-form-grid">
+                <div class="form-group"><label class="form-label">Prénom *</label><input type="text" class="form-input" placeholder="Jean" required></div>
+                <div class="form-group"><label class="form-label">Nom *</label><input type="text" class="form-input" placeholder="Dupont" required></div>
+                <div class="form-group full"><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="jean@exemple.com" required></div>
+                <div class="form-group full"><label class="form-label">Téléphone *</label><input type="tel" class="form-input" placeholder="+33 6 12 34 56 78" required></div>
+                <div class="form-group full"><label class="form-label">Adresse *</label><input type="text" class="form-input" placeholder="123 rue de la Paix" required></div>
+                <div class="form-group full"><label class="form-label">Complément d'adresse</label><input type="text" class="form-input" placeholder="Appartement, suite, bâtiment..."></div>
+                <div class="form-group"><label class="form-label">Ville *</label><input type="text" class="form-input" placeholder="Paris" required></div>
+                <div class="form-group"><label class="form-label">Code postal *</label><input type="text" class="form-input" placeholder="75001" required></div>
+                <div class="form-group full"><label class="form-label">Pays *</label>
+                  <select class="form-select" required>
+                    <option value="">Sélectionner un pays</option>
+                    <option value="FR">🇫🇷 France</option>
+                    <option value="BE">🇧🇪 Belgique</option>
+                    <option value="CH">🇨🇭 Suisse</option>
+                    <option value="CA">🇨🇦 Canada</option>
+                    <option value="BJ">🇧🇯 Bénin</option>
+                    <option value="SN">🇸🇳 Sénégal</option>
+                    <option value="CI">🇨🇮 Côte d'Ivoire</option>
+                    <option value="CM">🇨🇲 Cameroun</option>
+                    <option value="NG">🇳🇬 Nigeria</option>
+                    <option value="US">🇺🇸 États-Unis</option>
+                    <option value="GB">🇬🇧 Royaume-Uni</option>
+                    <option value="DE">🇩🇪 Allemagne</option>
+                    <option value="ES">🇪🇸 Espagne</option>
+                    <option value="IT">🇮🇹 Italie</option>
+                    <option value="BR">🇧🇷 Brésil</option>
+                    <option value="MA">🇲🇦 Maroc</option>
+                    <option value="TN">🇹🇳 Tunisie</option>
+                    <option value="DZ">🇩🇿 Algérie</option>
+                    <option value="JP">🇯🇵 Japon</option>
+                    <option value="AU">🇦🇺 Australie</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!-- Delivery method -->
+              <div style="margin-top:24px;">
+                <div style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:12px;">Méthode de livraison</div>
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <label style="display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--surface-2);border:2px solid var(--primary);border-radius:var(--radius-lg);cursor:pointer;">
+                    <input type="radio" name="delivery" value="standard" checked style="accent-color:var(--primary);">
+                    <span style="font-size:20px;">🚚</span>
+                    <div style="flex:1;"><div style="font-weight:600;font-size:14px;">Standard 3-5 jours</div><div style="font-size:12px;color:var(--text-muted);">Suivi en temps réel</div></div>
+                    <span style="font-weight:700;color:var(--success);">GRATUIT</span>
+                  </label>
+                  <label style="display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--surface-2);border:2px solid var(--border);border-radius:var(--radius-lg);cursor:pointer;">
+                    <input type="radio" name="delivery" value="express" style="accent-color:var(--primary);">
+                    <span style="font-size:20px;">🚀</span>
+                    <div style="flex:1;"><div style="font-weight:600;font-size:14px;">Express 24h</div><div style="font-size:12px;color:var(--text-muted);">Commandez avant 14h</div></div>
+                    <span style="font-weight:700;">$12.99</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Payment -->
+            <div class="checkout-section">
+              <div class="checkout-section-header">
+                <div class="checkout-step-num">2</div>
+                <h3>Mode de paiement</h3>
+              </div>
+              <div class="payment-methods-select">
+                <div class="payment-option active" data-method="card">
+                  <input type="radio" name="payment" value="card" checked>
+                  <span class="payment-icon">💳</span>
+                  <span class="payment-name">Carte bancaire (Visa, Mastercard)</span>
+                  <span class="badge badge-success">🔒 Sécurisé</span>
+                </div>
+                <div class="payment-option" data-method="paypal">
+                  <input type="radio" name="payment" value="paypal">
+                  <span class="payment-icon">🅿️</span>
+                  <span class="payment-name">PayPal</span>
+                  <span class="badge" style="background:rgba(0,112,240,0.1);color:#0070f0;">Recommandé</span>
+                </div>
+                <div class="payment-option" data-method="apple">
+                  <input type="radio" name="payment" value="apple">
+                  <span class="payment-icon">🍎</span>
+                  <span class="payment-name">Apple Pay</span>
+                </div>
+                <div class="payment-option" data-method="mobile">
+                  <input type="radio" name="payment" value="mobile">
+                  <span class="payment-icon">📱</span>
+                  <span class="payment-name">Mobile Money (Wave, MTN, MOOV, Celtis, Orange)</span>
+                </div>
+              </div>
+              
+              <div id="payment-card" class="payment-fields" style="margin-top:16px;">
+                <div class="card-inputs">
+                  <div class="form-group full"><label class="form-label">Numéro de carte *</label><input type="text" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19"></div>
+                  <div class="form-group full"><label class="form-label">Titulaire *</label><input type="text" class="form-input" placeholder="Jean Dupont"></div>
+                  <div class="form-group"><label class="form-label">Expiration *</label><input type="text" class="form-input" placeholder="MM/AA" maxlength="5"></div>
+                  <div class="form-group"><label class="form-label">CVV *</label><input type="text" class="form-input" placeholder="123" maxlength="4"></div>
+                </div>
+              </div>
+              <div id="payment-paypal" class="payment-fields" style="display:none;margin-top:16px;padding:20px;background:var(--surface-2);border-radius:var(--radius-lg);text-align:center;">
+                <span style="font-size:48px;">🅿️</span>
+                <p style="margin:12px 0;color:var(--text-secondary);">Vous serez redirigé vers PayPal pour finaliser votre paiement sécurisé.</p>
+              </div>
+              <div id="payment-apple" class="payment-fields" style="display:none;margin-top:16px;padding:20px;background:var(--surface-2);border-radius:var(--radius-lg);text-align:center;">
+                <span style="font-size:48px;">🍎</span>
+                <p style="margin:12px 0;color:var(--text-secondary);">Utilisez Face ID ou Touch ID pour confirmer votre paiement.</p>
+              </div>
+              <div id="payment-mobile" class="payment-fields" style="display:none;margin-top:16px;">
+                <div class="form-group"><label class="form-label">Opérateur</label>
+                  <select class="form-select">
+                    <option>Wave</option><option>MTN Mobile Money</option><option>MOOV Mobile Money</option><option>Celtis Mobile Money</option><option>Orange Money</option><option>Airtel Money</option>
+                  </select>
+                </div>
+                <div class="form-group"><label class="form-label">Numéro *</label><input type="tel" class="form-input" placeholder="+229 XX XX XX XX"></div>
+              </div>
+            </div>
+            
+            <!-- Confirmation -->
+            <div class="checkout-section">
+              <div class="checkout-section-header">
+                <div class="checkout-step-num">3</div>
+                <h3>Confirmation</h3>
+              </div>
+              <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;font-size:14px;color:var(--text-secondary);">
+                <input type="checkbox" required style="margin-top:2px;accent-color:var(--primary);">
+                <span>J'accepte les <a href="#" style="color:var(--primary);">Conditions Générales de Vente</a> et la <a href="#" style="color:var(--primary);">Politique de confidentialité</a> de NOVARYX Store.</span>
+              </label>
+              <label style="display:flex;align-items:center;gap:12px;cursor:pointer;font-size:14px;color:var(--text-secondary);margin-top:10px;">
+                <input type="checkbox" style="accent-color:var(--primary);">
+                <span>Je souhaite recevoir les offres exclusives et nouveautés par email.</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        
+        <!-- ORDER SUMMARY -->
+        <div>
+          <div class="order-summary-card">
+            <div class="order-summary-title">📦 Résumé de la commande</div>
+            <div class="order-items" id="checkout-items">
+              <div style="text-align:center;padding:24px;color:var(--text-muted);">
+                <div style="font-size:48px;margin-bottom:12px;">🛒</div>
+                <p>Votre panier est vide</p>
+                <a href="shop.html" class="btn btn-primary btn-sm" style="margin-top:12px;display:inline-flex;">Explorer la boutique</a>
+              </div>
+            </div>
+            
+            <div class="promo-code-wrap">
+              <input type="text" id="promo-input" class="form-input" placeholder="Code promo" style="flex:1;">
+              <button class="btn btn-outline" id="apply-promo">Appliquer</button>
+            </div>
+            
+            <div class="order-totals">
+              <div class="order-total-row"><span class="label">Sous-total</span><span id="checkout-subtotal">--</span></div>
+              <div class="order-total-row" id="promo-discount-row" style="display:none;"><span class="label" style="color:var(--success);">🎉 Réduction promo</span><span id="checkout-discount" style="color:var(--success);">--</span></div>
+              <div class="order-total-row"><span class="label">Livraison</span><span id="checkout-shipping" style="color:var(--success);">GRATUITE</span></div>
+              <div class="order-total-row"><span class="label">TVA (8%)</span><span id="checkout-tax">--</span></div>
+              <div class="order-total-row final"><span class="label">Total TTC</span><span class="val" id="checkout-total">--</span></div>
+            </div>
+            
+            <button class="btn btn-primary btn-full btn-lg" id="place-order-btn" onclick="processOrder()" style="margin-top:16px;">
+              🔒 Confirmer la commande
+            </button>
+            
+            <div class="security-badges">
+              <div class="security-badge">🔒 SSL</div>
+              <div class="security-badge">✅ Vérifié</div>
+              <div class="security-badge">💳 PCI DSS</div>
+              <div class="security-badge">↩️ 30j retour</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Order Success -->
+    <div id="order-success" style="display:none;">
+      <div class="order-success">
+        <div class="success-icon">✅</div>
+        <h1>Commande Confirmée!</h1>
+        <p>Merci pour votre achat sur NOVARYX Store. Vous recevrez un email de confirmation avec le suivi de votre commande.</p>
+        <div style="padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xl);margin-bottom:32px;">
+          <div style="font-size:13px;color:var(--text-muted);margin-bottom:4px;">Numéro de commande</div>
+          <div style="font-family:var(--font-display);font-size:28px;" id="order-id-display">NVRX-XXXXX</div>
+        </div>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="account.html" class="btn btn-primary">📦 Suivre ma commande</a>
+          <a href="index.html" class="btn btn-outline">← Retour à l'accueil</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:16px;display:inline-flex;"><div class="logo-icon">N</div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><p>Votre destination premium mondiale pour les articles sportifs, l'électronique, les chaussures professionnelles et les vêtements de qualité. Livraison dans 12+ pays.</p><div class="social-links"><div class="social-link">📘</div><div class="social-link">📸</div><div class="social-link">🎵</div><div class="social-link">▶️</div><div class="social-link">💬</div></div><div style="margin-top:20px;padding:14px;background:var(--surface-2);border-radius:var(--radius-lg);font-size:12px;color:var(--text-muted);">📞 +229 (01XXXXXXXX) NOVARYX<br>📧 support@novaryx.store<br>⏰ Support 24h/7j</div></div><div class="footer-col"><h4>Boutique</h4><div class="footer-links"><a href="shop.html?cat=sports">Articles Sportifs</a><a href="shop.html?cat=electronics">Électronique</a><a href="shop.html?cat=footwear">Chaussures Pro</a><a href="shop.html?cat=clothing">Vêtements</a><a href="shop.html?tag=new">Nouveautés</a><a href="shop.html?tag=sale">Promotions 🔥</a></div></div><div class="footer-col"><h4>Services</h4><div class="footer-links"><a href="#">Livraison & Retours</a><a href="#">Guide des Tailles</a><a href="#">Programme Fidélité</a><a href="#">Carte Cadeau</a><a href="#">Commande B2B</a><a href="#">Personnalisation</a></div></div><div class="footer-col"><h4>Compte</h4><div class="footer-links"><a href="account.html">Mon Compte</a><a href="account.html">Mes Commandes</a><a href="account.html">Ma Wishlist</a><a href="account.html">Mes Adresses</a><a href="#">Parrainage</a></div></div><div class="footer-col"><h4>À propos</h4><div class="footer-links"><a href="#">Notre Histoire</a><a href="#">Partenaires</a><a href="#">Carrières</a><a href="#">CGV</a><a href="#">RGPD</a><a href="#">Mentions légales</a></div></div></div></div><div class="container"><div class="footer-bottom"><span>© 2026 NOVARYX Store. Tous droits réservés.</span><div class="payment-methods"><span style="font-size:12px;color:var(--text-muted);">Paiements:</span><span class="payment-badge">Visa</span><span class="payment-badge">Mastercard</span><span class="payment-badge">PayPal</span><span class="payment-badge">Apple Pay</span><span class="payment-badge">Mobile Money</span></div></div></div></footer>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

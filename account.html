@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Compte - NOVARYX Store</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body data-page="account">
+<div class="topbar"><div class="container"><div class="topbar-inner"><div class="topbar-left"><span>🚀 Livraison gratuite dès 50$ &nbsp;|&nbsp; 🌍 12+ pays &nbsp;|&nbsp; ↩️ Retour 30 jours</span></div><div class="topbar-right"><div class="lang-selector" style="cursor:pointer;"><span>🇫🇷</span><span>FR</span><span>▾</span></div><select onchange="setCurrency(this.value)" style="background:rgba(255,255,255,0.15);border:none;color:white;font-family:var(--font-condensed);font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;outline:none;"><option value="USD">$ USD</option><option value="EUR">€ EUR</option><option value="GBP">£ GBP</option><option value="XOF">CFA XOF</option><option value="NGN">₦ NGN</option><option value="CAD">CA$</option><option value="JPY">¥ JPY</option></select><a href="account.html">Mon compte</a><a href="#">Aide</a></div></div></div></div>
+<header class="site-header"><div class="container"><div class="header-inner"><a href="index.html" class="logo"><div class="logo-icon"><img src="navaryx-store.png" alt="logo de novaryx"></div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><nav class="main-nav"><div class="nav-item"><a href="shop.html?cat=sports" class="nav-link">⚽ Sports <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Chaussures</h4><ul><li><a href="shop.html?cat=sports&q=running">Running</a></li><li><a href="shop.html?cat=sports&q=football">Football</a></li><li><a href="shop.html?cat=sports&q=basketball">Basketball</a></li></ul></div><div class="mega-menu-col"><h4>Équipements</h4><ul><li><a href="shop.html?cat=sports&q=gym">Gym</a></li><li><a href="shop.html?cat=sports&q=yoga">Yoga</a></li><li><a href="shop.html?cat=sports">Voir tout →</a></li></ul></div><div class="mega-menu-featured"><span class="badge">NOUVEAU</span><h3>Collection Pro</h3><p>Performance pour champions</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=electronics" class="nav-link">📱 Électronique <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Audio</h4><ul><li><a href="shop.html?cat=electronics&q=earbuds">Écouteurs ANC</a></li><li><a href="shop.html?cat=electronics&q=speaker">Enceintes</a></li></ul></div><div class="mega-menu-col"><h4>High-Tech</h4><ul><li><a href="shop.html?cat=electronics&q=smartwatch">Smartwatch</a></li><li><a href="shop.html?cat=electronics&q=drone">Drones</a></li><li><a href="shop.html?cat=electronics">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#0a84ff,#00D4FF);"><span class="badge" style="background:white;color:#0a84ff;">HOT 🔥</span><h3>Tech 2026</h3><p>Innovations premium</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=footwear" class="nav-link">👞 Chaussures Pro <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Pro</h4><ul><li><a href="shop.html?cat=footwear&q=medical">Médical</a></li><li><a href="shop.html?cat=footwear&q=safety">Sécurité</a></li></ul></div><div class="mega-menu-col"><h4>Élégance</h4><ul><li><a href="shop.html?cat=footwear&q=oxford">Oxford</a></li><li><a href="shop.html?cat=footwear">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#8B7355,#5C4033);"><span class="badge" style="background:gold;color:#000;">PREMIUM ✦</span><h3>Cuir Authentique</h3><p>Artisanat supérieur</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=clothing" class="nav-link">👔 Vêtements <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Business</h4><ul><li><a href="shop.html?cat=clothing&q=suit">Costumes</a></li><li><a href="shop.html?cat=clothing&q=shirt">Chemises</a></li></ul></div><div class="mega-menu-col"><h4>Casual</h4><ul><li><a href="shop.html?cat=clothing&q=hoodie">Hoodies</a></li><li><a href="shop.html?cat=clothing">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"><span class="badge" style="background:rgba(255,215,0,0.2);color:gold;border:1px solid gold;">LUXE ✦</span><h3>Mode Haute Gamme</h3><p>Matériaux nobles</p></div></div></div></div><a href="shop.html?tag=sale" class="nav-link" style="color:var(--primary);">🔥 Soldes</a></nav><div class="header-actions"><button class="search-btn" id="open-search-btn">🔍</button><a href="account.html" class="wishlist-btn" style="position:relative;">🤍<span class="badge-count wishlist-count" style="display:none;background:var(--primary);">0</span></a><a href="account.html" class="account-btn">👤</a><button class="cart-btn" id="open-cart-btn">🛒 <span>Panier</span><span class="badge-count cart-count" style="display:none;background:white;color:var(--primary);">0</span></button><button class="mobile-toggle" id="mobile-toggle"><span></span><span></span><span></span></button></div></div></div></header><div class="mobile-menu" id="mobile-menu"><nav class="mobile-nav"><a href="shop.html?cat=sports" class="mobile-nav-link">⚽ Sports</a><a href="shop.html?cat=electronics" class="mobile-nav-link">📱 Électronique</a><a href="shop.html?cat=footwear" class="mobile-nav-link">👞 Chaussures Pro</a><a href="shop.html?cat=clothing" class="mobile-nav-link">👔 Vêtements</a><a href="shop.html?tag=sale" class="mobile-nav-link" style="color:var(--primary);">🔥 Soldes</a><div style="border-top:1px solid var(--border);margin:8px 0;padding-top:8px;"><a href="account.html" class="mobile-nav-link">👤 Mon compte</a><a href="checkout.html" class="mobile-nav-link">🛒 Panier</a></div></nav></div><div class="search-overlay" id="search-overlay"><div class="container"><div class="search-bar-inner"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;"><span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);">Recherche rapide</span><button id="close-search-btn" style="cursor:pointer;font-size:18px;color:var(--text-muted);">✕</button></div><div class="search-input-wrap"><span style="font-size:20px;">🔍</span><input type="text" id="main-search-input" placeholder="Produits, marques, catégories..." autocomplete="off"><kbd style="padding:4px 8px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-muted);">ESC</kbd></div><div class="search-tags"><span style="font-size:12px;color:var(--text-muted);">Tendances:</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='running';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Running</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='earbuds';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Earbuds ANC</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='smartwatch';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Smartwatch</span></div><div id="search-results"></div></div></div></div>
+<div class="toast-container" id="toast-container"></div>
+
+<main>
+  <div style="background:var(--surface);padding:24px 0;border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>›</span>
+        <span style="color:var(--text-primary);">Mon Compte</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- LOGIN / REGISTER -->
+    <div id="account-login" style="display:none;max-width:480px;margin:60px auto;">
+      <div style="text-align:center;margin-bottom:32px;">
+        <span style="font-size:64px;display:block;margin-bottom:16px;">👤</span>
+        <h1 style="font-size:32px;margin-bottom:8px;">Mon Compte NOVARYX</h1>
+        <p style="color:var(--text-secondary);">Connectez-vous pour accéder à vos commandes et votre profil</p>
+      </div>
+      
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xl);overflow:hidden;">
+        <div style="display:flex;border-bottom:1px solid var(--border);">
+          <button id="tab-login-btn" class="tab-btn active" style="flex:1;" onclick="switchAuthTab('login')">Se connecter</button>
+          <button id="tab-reg-btn" class="tab-btn" style="flex:1;" onclick="switchAuthTab('register')">Créer un compte</button>
+        </div>
+        
+        <div style="padding:28px;">
+          <!-- Login Form -->
+          <div id="login-form-panel">
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="login-email" placeholder="votre@email.com"></div>
+              <div class="form-group"><label class="form-label">Mot de passe</label><input type="password" class="form-input" id="login-password" placeholder="••••••••"></div>
+              <div style="display:flex;justify-content:flex-end;"><a href="#" style="font-size:13px;color:var(--primary);">Mot de passe oublié?</a></div>
+              <button class="btn btn-primary btn-full btn-lg" onclick="login()">🔑 Se connecter</button>
+              <div style="text-align:center;font-size:13px;color:var(--text-muted);">— Ou connectez-vous avec —</div>
+              <div style="display:flex;gap:8px;">
+                <button class="btn btn-outline btn-full" onclick="socialLogin('Google')" style="gap:8px;">🔵 Google</button>
+                <button class="btn btn-outline btn-full" onclick="socialLogin('Facebook')" style="gap:8px;">📘 Facebook</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Register Form -->
+          <div id="register-form-panel" style="display:none;">
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div class="form-group"><label class="form-label">Nom complet</label><input type="text" class="form-input" id="reg-name" placeholder="Jean Dupont"></div>
+              <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="reg-email" placeholder="votre@email.com"></div>
+              <div class="form-group"><label class="form-label">Mot de passe</label><input type="password" class="form-input" id="reg-password" placeholder="8 caractères minimum"></div>
+              <label style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text-secondary);cursor:pointer;">
+                <input type="checkbox" required style="margin-top:2px;accent-color:var(--primary);">
+                <span>J'accepte les <a href="#" style="color:var(--primary);">CGV</a> et la <a href="#" style="color:var(--primary);">politique de confidentialité</a></span>
+              </label>
+              <button class="btn btn-primary btn-full btn-lg" onclick="register()">🚀 Créer mon compte</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCOUNT PANEL -->
+    <div id="account-panel" style="display:none;">
+      <div class="account-layout">
+        <!-- Sidebar -->
+        <div class="account-sidebar">
+          <div class="account-profile">
+            <div class="account-avatar" id="account-avatar" style="margin:0 auto 16px;">
+              <span id="account-avatar-letter">U</span>
+              <span class="avatar-edit">✏️</span>
+            </div>
+            <div class="account-name" id="account-name">Utilisateur</div>
+            <div class="account-email" id="account-email">user@email.com</div>
+            <div class="account-level">⭐ Membre Gold</div>
+          </div>
+          
+          <nav class="account-nav">
+            <div class="account-nav-item active" data-tab="orders" onclick="switchAccountTab('orders')">
+              <span class="icon">📦</span>Mes commandes<span class="count">3</span>
+            </div>
+            <div class="account-nav-item" data-tab="wishlist" onclick="switchAccountTab('wishlist')">
+              <span class="icon">🤍</span>Ma wishlist<span class="count wishlist-count-nav">0</span>
+            </div>
+            <div class="account-nav-item" data-tab="addresses" onclick="switchAccountTab('addresses')">
+              <span class="icon">📍</span>Mes adresses
+            </div>
+            <div class="account-nav-item" data-tab="profile" onclick="switchAccountTab('profile')">
+              <span class="icon">👤</span>Mon profil
+            </div>
+            <div class="account-nav-item" data-tab="preferences" onclick="switchAccountTab('preferences')">
+              <span class="icon">⚙️</span>Préférences
+            </div>
+            <div class="account-nav-item" onclick="logout()" style="color:var(--error);">
+              <span class="icon">🚪</span>Déconnexion
+            </div>
+          </nav>
+          
+          <!-- Loyalty points -->
+          <div style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:var(--radius-xl);padding:20px;margin-top:16px;">
+            <div style="font-family:var(--font-condensed);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.7;margin-bottom:8px;">Points Fidélité</div>
+            <div style="font-family:var(--font-display);font-size:40px;line-height:1;">1,250</div>
+            <div style="font-size:12px;opacity:0.7;margin-top:4px;">= $12.50 de réduction</div>
+            <button class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;margin-top:12px;border:1px solid rgba(255,255,255,0.3);">Utiliser mes points</button>
+          </div>
+        </div>
+        
+        <!-- Panels -->
+        <div>
+          <!-- Orders -->
+          <div class="account-panel active" id="panel-orders">
+            <div class="account-panel-header">
+              <h2>📦 Mes Commandes</h2>
+              <a href="shop.html" class="btn btn-primary btn-sm">🛍️ Nouvelle commande</a>
+            </div>
+            <div class="orders-list" id="orders-list"></div>
+          </div>
+          
+          <!-- Wishlist -->
+          <div class="account-panel" id="panel-wishlist">
+            <div class="account-panel-header">
+              <h2>🤍 Ma Wishlist</h2>
+              <span class="badge badge-outline" id="wishlist-total">0 articles</span>
+            </div>
+            <div class="wishlist-grid grid" id="wishlist-grid"></div>
+          </div>
+          
+          <!-- Addresses -->
+          <div class="account-panel" id="panel-addresses">
+            <div class="account-panel-header">
+              <h2>📍 Mes Adresses</h2>
+              <button class="btn btn-primary btn-sm" onclick="openAddAddressModal()">+ Ajouter</button>
+            </div>
+            <div class="addresses-grid" id="addresses-grid"></div>
+          </div>
+          
+          <!-- Profile -->
+          <div class="account-panel" id="panel-profile">
+            <div class="account-panel-header"><h2>👤 Mon Profil</h2></div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xl);padding:28px;">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                <div class="form-group"><label class="form-label">Prénom</label><input type="text" class="form-input" id="profile-firstname" placeholder="Jean"></div>
+                <div class="form-group"><label class="form-label">Nom</label><input type="text" class="form-input" id="profile-lastname" placeholder="Dupont"></div>
+                <div class="form-group" style="grid-column:1/-1;"><label class="form-label">Email</label><input type="email" class="form-input" id="profile-email" placeholder="jean@exemple.com"></div>
+                <div class="form-group" style="grid-column:1/-1;"><label class="form-label">Téléphone</label><input type="tel" class="form-input" placeholder="+33 6 12 34 56 78"></div>
+                <div class="form-group" style="grid-column:1/-1;"><label class="form-label">Date de naissance</label><input type="date" class="form-input"></div>
+              </div>
+              <div class="divider"></div>
+              <h4 style="margin-bottom:16px;">Changer le mot de passe</h4>
+              <div style="display:flex;flex-direction:column;gap:12px;">
+                <div class="form-group"><label class="form-label">Mot de passe actuel</label><input type="password" class="form-input" placeholder="••••••••"></div>
+                <div class="form-group"><label class="form-label">Nouveau mot de passe</label><input type="password" class="form-input" placeholder="8 caractères minimum"></div>
+              </div>
+              <button class="btn btn-primary" style="margin-top:20px;" onclick="showToast('Profil mis à jour avec succès!','success')">💾 Sauvegarder les modifications</button>
+            </div>
+          </div>
+          
+          <!-- Preferences -->
+          <div class="account-panel" id="panel-preferences">
+            <div class="account-panel-header"><h2>⚙️ Préférences</h2></div>
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-xl);padding:28px;">
+              <h4 style="margin-bottom:16px;">Langue & Devise</h4>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;">
+                <div class="form-group"><label class="form-label">Langue</label>
+                  <select class="form-select" onchange="showToast('Langue mise à jour!','success')">
+                    <option>🇫🇷 Français</option><option>🇺🇸 English</option><option>🇪🇸 Español</option><option>🇸🇦 العربية</option>
+                  </select>
+                </div>
+                <div class="form-group"><label class="form-label">Devise</label>
+                  <select class="form-select" onchange="setCurrency(this.value)">
+                    <option value="EUR">€ EUR</option><option value="USD">$ USD</option><option value="GBP">£ GBP</option><option value="XOF">CFA XOF</option><option value="NGN">₦ NGN</option>
+                  </select>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <h4 style="margin-bottom:16px;">Notifications Email</h4>
+              <div style="display:flex;flex-direction:column;gap:12px;">
+                <label style="display:flex;align-items:center;justify-content:space-between;"><span>Offres et promotions</span><input type="checkbox" checked style="accent-color:var(--primary);" onchange="showToast('Préférences mises à jour','success')"></label>
+                <label style="display:flex;align-items:center;justify-content:space-between;"><span>Nouveaux produits</span><input type="checkbox" checked style="accent-color:var(--primary);" onchange="showToast('Préférences mises à jour','success')"></label>
+                <label style="display:flex;align-items:center;justify-content:space-between;"><span>Mises à jour des commandes</span><input type="checkbox" checked style="accent-color:var(--primary);" onchange="showToast('Préférences mises à jour','success')"></label>
+                <label style="display:flex;align-items:center;justify-content:space-between;"><span>Newsletter mensuelle</span><input type="checkbox" style="accent-color:var(--primary);" onchange="showToast('Préférences mises à jour','success')"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Address Modal -->
+<div class="overlay" id="address-modal-overlay" style="z-index:1000;">
+  <div class="modal" style="max-width:480px;">
+    <h3 style="margin-bottom:20px;">📍 Ajouter une adresse</h3>
+    <div id="address-form" style="display:flex;flex-direction:column;gap:12px;">
+      <div class="form-group"><label class="form-label">Nom complet *</label><input type="text" class="form-input" id="addr-name" placeholder="Jean Dupont"></div>
+      <div class="form-group"><label class="form-label">Adresse *</label><input type="text" class="form-input" id="addr-street" placeholder="123 rue de la Paix"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="form-group"><label class="form-label">Ville *</label><input type="text" class="form-input" id="addr-city" placeholder="Paris"></div>
+        <div class="form-group"><label class="form-label">Code postal *</label><input type="text" class="form-input" id="addr-zip" placeholder="75001"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Pays *</label>
+        <select class="form-select" id="addr-country"><option value="FR">🇫🇷 France</option><option value="BE">🇧🇪 Belgique</option><option value="BJ">🇧🇯 Bénin</option><option value="SN">🇸🇳 Sénégal</option><option value="CI">🇨🇮 Côte d'Ivoire</option><option value="US">🇺🇸 États-Unis</option></select>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px;">
+      <button class="btn btn-primary btn-full" onclick="saveAddress()">💾 Sauvegarder</button>
+      <button class="btn btn-outline" onclick="closeAddressModal()">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:16px;display:inline-flex;"><div class="logo-icon">N</div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><p>Votre destination premium mondiale pour les articles sportifs, l'électronique, les chaussures professionnelles et les vêtements de qualité. Livraison dans 120+ pays.</p><div class="social-links"><div class="social-link">📘</div><div class="social-link">📸</div><div class="social-link">🎵</div><div class="social-link">▶️</div><div class="social-link">💬</div></div><div style="margin-top:20px;padding:14px;background:var(--surface-2);border-radius:var(--radius-lg);font-size:12px;color:var(--text-muted);">📞 +1 (800) NOVARYX<br>📧 support@novaryx.store<br>⏰ Support 24h/7j</div></div><div class="footer-col"><h4>Boutique</h4><div class="footer-links"><a href="shop.html?cat=sports">Articles Sportifs</a><a href="shop.html?cat=electronics">Électronique</a><a href="shop.html?cat=footwear">Chaussures Pro</a><a href="shop.html?cat=clothing">Vêtements</a><a href="shop.html?tag=new">Nouveautés</a><a href="shop.html?tag=sale">Promotions 🔥</a></div></div><div class="footer-col"><h4>Services</h4><div class="footer-links"><a href="#">Livraison & Retours</a><a href="#">Guide des Tailles</a><a href="#">Programme Fidélité</a><a href="#">Carte Cadeau</a><a href="#">Commande B2B</a><a href="#">Personnalisation</a></div></div><div class="footer-col"><h4>Compte</h4><div class="footer-links"><a href="account.html">Mon Compte</a><a href="account.html">Mes Commandes</a><a href="account.html">Ma Wishlist</a><a href="account.html">Mes Adresses</a><a href="#">Parrainage</a></div></div><div class="footer-col"><h4>À propos</h4><div class="footer-links"><a href="#">Notre Histoire</a><a href="#">Partenaires</a><a href="#">Carrières</a><a href="#">CGV</a><a href="#">RGPD</a><a href="#">Mentions légales</a></div></div></div></div><div class="container"><div class="footer-bottom"><span>© 2025 NOVARYX Store. Tous droits réservés.</span><div class="payment-methods"><span style="font-size:12px;color:var(--text-muted);">Paiements:</span><span class="payment-badge">Visa</span><span class="payment-badge">Mastercard</span><span class="payment-badge">PayPal</span><span class="payment-badge">Apple Pay</span><span class="payment-badge">Mobile Money</span></div></div></div></footer>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+<script>
+function switchAuthTab(tab) {
+  document.getElementById('login-form-panel').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('register-form-panel').style.display = tab === 'register' ? 'block' : 'none';
+  document.getElementById('tab-login-btn').classList.toggle('active', tab === 'login');
+  document.getElementById('tab-reg-btn').classList.toggle('active', tab === 'register');
+}
+function socialLogin(provider) {
+  showToast(`Connexion via ${provider} - Demo`, 'success');
+  store.user = { name: 'Demo User', email: 'demo@novaryx.store', id: Date.now() };
+  store.save();
+  showAccountPanel();
+  loadAccountData();
+}
+// Auto-show login panel on load
+document.addEventListener('DOMContentLoaded', () => {
+  if (!store.user) {
+    document.getElementById('account-login').style.display = 'block';
+  } else {
+    showAccountPanel();
+    loadAccountData();
+  }
+  document.querySelector('.wishlist-count-nav') && (document.querySelector('.wishlist-count-nav').textContent = store.wishlist.length);
+  document.getElementById('wishlist-total') && (document.getElementById('wishlist-total').textContent = store.wishlist.length + ' articles');
+});
+</script>
+</body>
+</html>

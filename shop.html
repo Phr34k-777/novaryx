@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique - NOVARYX Store</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar-inner"><div class="topbar-left"><span>🚀 Livraison gratuite dès 50$ &nbsp;|&nbsp; 🌍 12+ pays &nbsp;|&nbsp; ↩️ Retour 30 jours</span></div><div class="topbar-right"><div class="lang-selector" style="cursor:pointer;"><span>🇫🇷</span><span>FR</span><span>▾</span></div><select onchange="setCurrency(this.value)" style="background:rgba(255,255,255,0.15);border:none;color:white;font-family:var(--font-condensed);font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;outline:none;"><option value="USD">$ USD</option><option value="EUR">€ EUR</option><option value="GBP">£ GBP</option><option value="XOF">CFA XOF</option><option value="NGN">₦ NGN</option><option value="CAD">CA$</option><option value="JPY">¥ JPY</option></select><a href="account.html">Mon compte</a><a href="#">Aide</a></div></div></div></div>
+<header class="site-header"><div class="container"><div class="header-inner"><a href="index.html" class="logo"><div class="logo-icon">N</div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><nav class="main-nav"><div class="nav-item"><a href="shop.html?cat=sports" class="nav-link">⚽ Sports <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Chaussures</h4><ul><li><a href="shop.html?cat=sports&q=running">Running</a></li><li><a href="shop.html?cat=sports&q=football">Football</a></li><li><a href="shop.html?cat=sports&q=basketball">Basketball</a></li></ul></div><div class="mega-menu-col"><h4>Équipements</h4><ul><li><a href="shop.html?cat=sports&q=gym">Gym</a></li><li><a href="shop.html?cat=sports&q=yoga">Yoga</a></li><li><a href="shop.html?cat=sports">Voir tout →</a></li></ul></div><div class="mega-menu-featured"><span class="badge">NOUVEAU</span><h3>Collection Pro</h3><p>Performance pour champions</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=electronics" class="nav-link">📱 Électronique <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Audio</h4><ul><li><a href="shop.html?cat=electronics&q=earbuds">Écouteurs ANC</a></li><li><a href="shop.html?cat=electronics&q=speaker">Enceintes</a></li></ul></div><div class="mega-menu-col"><h4>High-Tech</h4><ul><li><a href="shop.html?cat=electronics&q=smartwatch">Smartwatch</a></li><li><a href="shop.html?cat=electronics&q=drone">Drones</a></li><li><a href="shop.html?cat=electronics">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#0a84ff,#00D4FF);"><span class="badge" style="background:white;color:#0a84ff;">HOT 🔥</span><h3>Tech 2025</h3><p>Innovations premium</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=footwear" class="nav-link">👞 Chaussures Pro <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Pro</h4><ul><li><a href="shop.html?cat=footwear&q=medical">Médical</a></li><li><a href="shop.html?cat=footwear&q=safety">Sécurité</a></li></ul></div><div class="mega-menu-col"><h4>Élégance</h4><ul><li><a href="shop.html?cat=footwear&q=oxford">Oxford</a></li><li><a href="shop.html?cat=footwear">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#8B7355,#5C4033);"><span class="badge" style="background:gold;color:#000;">PREMIUM ✦</span><h3>Cuir Authentique</h3><p>Artisanat supérieur</p></div></div></div></div><div class="nav-item"><a href="shop.html?cat=clothing" class="nav-link">👔 Vêtements <span class="arrow">▾</span></a><div class="mega-menu"><div class="mega-menu-grid"><div class="mega-menu-col"><h4>Business</h4><ul><li><a href="shop.html?cat=clothing&q=suit">Costumes</a></li><li><a href="shop.html?cat=clothing&q=shirt">Chemises</a></li></ul></div><div class="mega-menu-col"><h4>Casual</h4><ul><li><a href="shop.html?cat=clothing&q=hoodie">Hoodies</a></li><li><a href="shop.html?cat=clothing">Voir tout →</a></li></ul></div><div class="mega-menu-featured" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"><span class="badge" style="background:rgba(255,215,0,0.2);color:gold;border:1px solid gold;">LUXE ✦</span><h3>Mode Haute Gamme</h3><p>Matériaux nobles</p></div></div></div></div><a href="shop.html?tag=sale" class="nav-link" style="color:var(--primary);">🔥 Soldes</a></nav><div class="header-actions"><button class="search-btn" id="open-search-btn">🔍</button><a href="account.html" class="wishlist-btn" style="position:relative;">🤍<span class="badge-count wishlist-count" style="display:none;background:var(--primary);">0</span></a><a href="account.html" class="account-btn">👤</a><button class="cart-btn" id="open-cart-btn">🛒 <span>Panier</span><span class="badge-count cart-count" style="display:none;background:white;color:var(--primary);">0</span></button><button class="mobile-toggle" id="mobile-toggle"><span></span><span></span><span></span></button></div></div></div></header><div class="mobile-menu" id="mobile-menu"><nav class="mobile-nav"><a href="shop.html?cat=sports" class="mobile-nav-link">⚽ Sports</a><a href="shop.html?cat=electronics" class="mobile-nav-link">📱 Électronique</a><a href="shop.html?cat=footwear" class="mobile-nav-link">👞 Chaussures Pro</a><a href="shop.html?cat=clothing" class="mobile-nav-link">👔 Vêtements</a><a href="shop.html?tag=sale" class="mobile-nav-link" style="color:var(--primary);">🔥 Soldes</a><div style="border-top:1px solid var(--border);margin:8px 0;padding-top:8px;"><a href="account.html" class="mobile-nav-link">👤 Mon compte</a><a href="checkout.html" class="mobile-nav-link">🛒 Panier</a></div></nav></div><div class="search-overlay" id="search-overlay"><div class="container"><div class="search-bar-inner"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;"><span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);">Recherche rapide</span><button id="close-search-btn" style="cursor:pointer;font-size:18px;color:var(--text-muted);">✕</button></div><div class="search-input-wrap"><span style="font-size:20px;">🔍</span><input type="text" id="main-search-input" placeholder="Produits, marques, catégories..." autocomplete="off"><kbd style="padding:4px 8px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-muted);">ESC</kbd></div><div class="search-tags"><span style="font-size:12px;color:var(--text-muted);">Tendances:</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='running';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Running</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='earbuds';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Earbuds ANC</span><span class="search-tag" onclick="document.getElementById('main-search-input').value='smartwatch';document.getElementById('main-search-input').dispatchEvent(new Event('input'))">Smartwatch</span></div><div id="search-results"></div></div></div></div>
+<div class="cart-sidebar" id="cart-sidebar"><div class="cart-header"><h2>🛒 Mon Panier <span style="color:var(--text-muted);font-size:14px;font-weight:400;">(<span class="cart-count">0</span>)</span></h2><button class="cart-close" id="close-cart-btn">✕</button></div><div class="cart-items" id="cart-items-container"></div><div class="cart-footer"><div class="cart-total-row"><span class="cart-total-label">Sous-total</span><span class="cart-total-value cart-total-display">--</span></div><div class="cart-total-row"><span class="cart-total-label">Livraison</span><span style="color:var(--success);font-weight:700;font-size:14px;">GRATUITE dès 50$</span></div><div class="divider"></div><div class="cart-total-row cart-grand-total"><span class="cart-total-label">Total estimé</span><span class="cart-total-value cart-total-display">--</span></div><a href="checkout.html" class="btn btn-primary btn-full btn-lg">🔒 Commander</a><a href="shop.html" class="btn btn-ghost btn-full" style="text-align:center;margin-top:8px;">← Continuer les achats</a></div></div><div class="overlay" id="cart-overlay" style="z-index:999;"></div><div class="overlay" id="quickview-overlay" style="z-index:1001;"><div class="modal" id="quickview-modal" style="max-width:760px;position:relative;"></div></div>
+<div class="toast-container" id="toast-container"></div>
+
+<main>
+  <div style="background:var(--surface);padding:32px 0;border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>›</span>
+        <span style="color:var(--text-primary);">Boutique</span>
+      </div>
+      <div class="flex-between" style="flex-wrap:wrap;gap:16px;">
+        <div>
+          <h1 style="font-size:clamp(28px,5vw,48px);">Notre <span style="color:var(--primary);">Boutique</span></h1>
+          <p style="color:var(--text-secondary);margin-top:8px;">Découvrez notre sélection de produits premium pour tous vos besoins</p>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="shop.html?cat=all" class="btn btn-ghost btn-sm" data-cat-filter="all">Tous</a>
+          <a href="shop.html?cat=sports" class="btn btn-ghost btn-sm" data-cat-filter="sports">⚽ Sports</a>
+          <a href="shop.html?cat=electronics" class="btn btn-ghost btn-sm" data-cat-filter="electronics">📱 Électronique</a>
+          <a href="shop.html?cat=footwear" class="btn btn-ghost btn-sm" data-cat-filter="footwear">👞 Chaussures</a>
+          <a href="shop.html?cat=clothing" class="btn btn-ghost btn-sm" data-cat-filter="clothing">👔 Vêtements</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="shop-layout">
+      <!-- FILTER SIDEBAR -->
+      <aside class="filter-sidebar" id="filter-sidebar">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+          <h3 style="font-size:16px;">🎛️ Filtres</h3>
+          <button class="btn btn-ghost btn-sm" onclick="resetFilters()">Réinitialiser</button>
+        </div>
+        
+        <!-- Category filter -->
+        <div class="filter-panel">
+          <div class="filter-panel-header"><span class="filter-panel-title">Catégories</span><span class="filter-toggle-icon">▾</span></div>
+          <div class="filter-panel-body">
+            <label class="filter-option"><input type="radio" name="catf" data-cat-filter="all" checked><span class="filter-check" style="border-radius:50%;"></span><span class="filter-option-label">Tous les produits</span><span class="filter-option-count">20</span></label>
+            <label class="filter-option"><input type="radio" name="catf" data-cat-filter="sports"><span class="filter-check" style="border-radius:50%;"></span><span class="filter-option-label">⚽ Sports</span><span class="filter-option-count">6</span></label>
+            <label class="filter-option"><input type="radio" name="catf" data-cat-filter="electronics"><span class="filter-check" style="border-radius:50%;"></span><span class="filter-option-label">📱 Électronique</span><span class="filter-option-count">6</span></label>
+            <label class="filter-option"><input type="radio" name="catf" data-cat-filter="footwear"><span class="filter-check" style="border-radius:50%;"></span><span class="filter-option-label">👞 Chaussures Pro</span><span class="filter-option-count">4</span></label>
+            <label class="filter-option"><input type="radio" name="catf" data-cat-filter="clothing"><span class="filter-check" style="border-radius:50%;"></span><span class="filter-option-label">👔 Vêtements</span><span class="filter-option-count">4</span></label>
+          </div>
+        </div>
+        
+        <!-- Price range -->
+        <div class="filter-panel">
+          <div class="filter-panel-header"><span class="filter-panel-title">Prix</span><span class="filter-toggle-icon">▾</span></div>
+          <div class="filter-panel-body">
+            <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+              <span id="price-min-display" style="font-size:13px;color:var(--text-secondary);">$0</span>
+              <span id="price-max-display" style="font-size:13px;color:var(--text-secondary);">$1000</span>
+            </div>
+            <input type="range" id="price-min" min="0" max="1000" value="0" step="10">
+            <input type="range" id="price-max" min="0" max="1000" value="1000" step="10">
+          </div>
+        </div>
+        
+        <!-- Brands -->
+        <div class="filter-panel">
+          <div class="filter-panel-header"><span class="filter-panel-title">Marques</span><span class="filter-toggle-icon">▾</span></div>
+          <div class="filter-panel-body" id="brand-filter"></div>
+        </div>
+        
+        <!-- Tags -->
+        <div class="filter-panel">
+          <div class="filter-panel-header"><span class="filter-panel-title">Statut</span><span class="filter-toggle-icon">▾</span></div>
+          <div class="filter-panel-body">
+            <label class="filter-option"><input type="checkbox" data-tag-filter="new"><span class="filter-check"></span><span class="filter-option-label">🆕 Nouveautés</span></label>
+            <label class="filter-option"><input type="checkbox" data-tag-filter="sale"><span class="filter-check"></span><span class="filter-option-label">🔥 En promotion</span></label>
+            <label class="filter-option"><input type="checkbox" data-tag-filter="bestseller"><span class="filter-check"></span><span class="filter-option-label">⭐ Meilleures ventes</span></label>
+            <label class="filter-option"><input type="checkbox" data-tag-filter="premium"><span class="filter-check"></span><span class="filter-option-label">✦ Premium</span></label>
+            <label class="filter-option"><input type="checkbox" data-tag-filter="limited"><span class="filter-check"></span><span class="filter-option-label">⚡ Édition limitée</span></label>
+          </div>
+        </div>
+        
+        <!-- Rating -->
+        <div class="filter-panel">
+          <div class="filter-panel-header"><span class="filter-panel-title">Note minimale</span><span class="filter-toggle-icon">▾</span></div>
+          <div class="filter-panel-body">
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <button class="size-btn" data-rating-filter="4.5" style="text-align:left;">★★★★★ 4.5+</button>
+              <button class="size-btn" data-rating-filter="4.0" style="text-align:left;">★★★★☆ 4.0+</button>
+              <button class="size-btn" data-rating-filter="3.5" style="text-align:left;">★★★☆☆ 3.5+</button>
+              <button class="size-btn" data-rating-filter="0" style="text-align:left;">Toutes les notes</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+      
+      <!-- PRODUCTS AREA -->
+      <div class="products-area">
+        <div id="active-filters" class="active-filters"></div>
+        <div class="products-toolbar">
+          <span id="products-count" class="products-count">Chargement...</span>
+          <div class="toolbar-right">
+            <select id="sort-select" class="sort-select">
+              <option value="popular">Plus populaires</option>
+              <option value="newest">Plus récents</option>
+              <option value="price-asc">Prix croissant</option>
+              <option value="price-desc">Prix décroissant</option>
+              <option value="rating">Mieux notés</option>
+              <option value="discount">Plus de réductions</option>
+            </select>
+            <div class="view-toggle">
+              <button class="view-btn active" id="view-grid" title="Grille">⊞</button>
+              <button class="view-btn" id="view-list" title="Liste">☰</button>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="mobile-filter-btn" style="display:none;">🎛️ Filtres</button>
+          </div>
+        </div>
+        <div id="shop-products" class="grid grid-4"></div>
+        <div id="pagination" class="pagination"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-main"><div class="footer-brand"><a href="index.html" class="logo" style="margin-bottom:16px;display:inline-flex;"><div class="logo-icon">N</div><div class="logo-text"><span class="logo-name">NOVARYX</span><span class="logo-tagline">Premium Store</span></div></a><p>Votre destination premium mondiale pour les articles sportifs, l'électronique, les chaussures professionnelles et les vêtements de qualité. Livraison dans 120+ pays.</p><div class="social-links"><div class="social-link">📘</div><div class="social-link">📸</div><div class="social-link">🎵</div><div class="social-link">▶️</div><div class="social-link">💬</div></div><div style="margin-top:20px;padding:14px;background:var(--surface-2);border-radius:var(--radius-lg);font-size:12px;color:var(--text-muted);">📞 +1 (800) NOVARYX<br>📧 support@novaryx.store<br>⏰ Support 24h/7j</div></div><div class="footer-col"><h4>Boutique</h4><div class="footer-links"><a href="shop.html?cat=sports">Articles Sportifs</a><a href="shop.html?cat=electronics">Électronique</a><a href="shop.html?cat=footwear">Chaussures Pro</a><a href="shop.html?cat=clothing">Vêtements</a><a href="shop.html?tag=new">Nouveautés</a><a href="shop.html?tag=sale">Promotions 🔥</a></div></div><div class="footer-col"><h4>Services</h4><div class="footer-links"><a href="#">Livraison & Retours</a><a href="#">Guide des Tailles</a><a href="#">Programme Fidélité</a><a href="#">Carte Cadeau</a><a href="#">Commande B2B</a><a href="#">Personnalisation</a></div></div><div class="footer-col"><h4>Compte</h4><div class="footer-links"><a href="account.html">Mon Compte</a><a href="account.html">Mes Commandes</a><a href="account.html">Ma Wishlist</a><a href="account.html">Mes Adresses</a><a href="#">Parrainage</a></div></div><div class="footer-col"><h4>À propos</h4><div class="footer-links"><a href="#">Notre Histoire</a><a href="#">Partenaires</a><a href="#">Carrières</a><a href="#">CGV</a><a href="#">RGPD</a><a href="#">Mentions légales</a></div></div></div></div><div class="container"><div class="footer-bottom"><span>© 2025 NOVARYX Store. Tous droits réservés.</span><div class="payment-methods"><span style="font-size:12px;color:var(--text-muted);">Paiements:</span><span class="payment-badge">Visa</span><span class="payment-badge">Mastercard</span><span class="payment-badge">PayPal</span><span class="payment-badge">Apple Pay</span><span class="payment-badge">Mobile Money</span></div></div></div></footer>
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+<script>
+// Make mobile filter btn visible on small screens
+window.addEventListener('resize', () => {
+  const btn = document.getElementById('mobile-filter-btn');
+  if (btn) btn.style.display = window.innerWidth <= 1024 ? 'flex' : 'none';
+});
+window.dispatchEvent(new Event('resize'));
+</script>
+</body>
+</html>

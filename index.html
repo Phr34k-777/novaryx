@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVARYX Store | Sports • Électronique • Chaussures Pro • Mode Premium</title>
+  <meta name="description" content="NOVARYX Store - Articles sportifs, électronique, chaussures professionnelles et vêtements de qualité. Livraison mondiale 120+ pays.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <span>🚀 Livraison gratuite dès 50$ &nbsp;|&nbsp; 🌍 Livraison mondiale 12+ pays &nbsp;|&nbsp; ↩️ Retour 30 jours</span>
+      </div>
+      <div class="topbar-right">
+        <div class="lang-selector" style="cursor:pointer;">
+          <span>🇫🇷</span><span>FR</span><span>▾</span>
+        </div>
+        <select onchange="setCurrency(this.value)" style="background:rgba(255,255,255,0.15);border:none;color:white;font-family:var(--font-condensed);font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px;cursor:pointer;outline:none;">
+          <option value="USD">$ USD</option>
+          <option value="EUR">€ EUR</option>
+          <option value="GBP">£ GBP</option>
+          <option value="XOF">CFA XOF</option>
+          <option value="NGN">₦ NGN</option>
+          <option value="CAD">CA$ CAD</option>
+          <option value="AUD">A$ AUD</option>
+          <option value="JPY">¥ JPY</option>
+        </select>
+        <a href="account.html">Mon compte</a>
+        <a href="#">Aide 24/7</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"> <img src="navaryx-store.png" alt="logo de NOVARYX"></div>
+        <div class="logo-text">
+          <span class="logo-name">NOVARYX</span>
+          <span class="logo-tagline">Premium Store</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <div class="nav-item">
+          <a href="shop.html?cat=sports" class="nav-link">⚽ Sports <span class="arrow">▾</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Chaussures Sport</h4>
+                <ul>
+                  <li><a href="shop.html?cat=sports&q=running">Running & Trail</a></li>
+                  <li><a href="shop.html?cat=sports&q=football">Football / Soccer</a></li>
+                  <li><a href="shop.html?cat=sports&q=basketball">Basketball</a></li>
+                  <li><a href="shop.html?cat=sports&q=tennis">Tennis & Padel</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Équipements</h4>
+                <ul>
+                  <li><a href="shop.html?cat=sports&q=gym">Gym & Musculation</a></li>
+                  <li><a href="shop.html?cat=sports&q=yoga">Yoga & Pilates</a></li>
+                  <li><a href="shop.html?cat=sports&q=cycling">Cyclisme</a></li>
+                  <li><a href="shop.html?cat=sports">Tout voir →</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-featured">
+                <span class="badge">NOUVEAU 2026</span>
+                <h3>Collection Pro</h3>
+                <p>Performance maximale pour champions</p>
+                <a href="shop.html?cat=sports" class="btn btn-outline btn-sm" style="color:white;border-color:rgba(255,255,255,0.3);margin-top:10px;display:inline-flex;">Explorer →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="shop.html?cat=electronics" class="nav-link">📱 Électronique <span class="arrow">▾</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Audio Premium</h4>
+                <ul>
+                  <li><a href="shop.html?cat=electronics&q=earbuds">Écouteurs ANC</a></li>
+                  <li><a href="shop.html?cat=electronics&q=headphones">Casques</a></li>
+                  <li><a href="shop.html?cat=electronics&q=speaker">Enceintes BT</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-col">
+                <h4>High-Tech</h4>
+                <ul>
+                  <li><a href="shop.html?cat=electronics&q=smartwatch">Montres Connectées</a></li>
+                  <li><a href="shop.html?cat=electronics&q=drone">Drones FPV</a></li>
+                  <li><a href="shop.html?cat=electronics&q=gaming">Gaming</a></li>
+                  <li><a href="shop.html?cat=electronics">Voir tout →</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-featured" style="background:linear-gradient(135deg,#0a84ff,#00D4FF);">
+                <span class="badge" style="background:white;color:#0a84ff;">HOT 🔥</span>
+                <h3>Tech 2026</h3>
+                <p>Les dernières innovations tech</p>
+                <a href="shop.html?cat=electronics" class="btn btn-outline btn-sm" style="color:white;border-color:rgba(255,255,255,0.3);margin-top:10px;display:inline-flex;">Explorer →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="shop.html?cat=footwear" class="nav-link">👞 Chaussures Pro <span class="arrow">▾</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Professionnel</h4>
+                <ul>
+                  <li><a href="shop.html?cat=footwear&q=medical">Médical / Santé</a></li>
+                  <li><a href="shop.html?cat=footwear&q=chef">Chef / Cuisine</a></li>
+                  <li><a href="shop.html?cat=footwear&q=safety">Sécurité S1/S3</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Élégance & Business</h4>
+                <ul>
+                  <li><a href="shop.html?cat=footwear&q=oxford">Oxford & Derby</a></li>
+                  <li><a href="shop.html?cat=footwear&q=loafer">Mocassins</a></li>
+                  <li><a href="shop.html?cat=footwear">Voir tout →</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-featured" style="background:linear-gradient(135deg,#8B7355,#5C4033);">
+                <span class="badge" style="background:var(--gold);color:#000;">PREMIUM ✦</span>
+                <h3>Cuir Authentique</h3>
+                <p>Artisanat et qualité supérieure</p>
+                <a href="shop.html?cat=footwear" class="btn btn-outline btn-sm" style="color:white;border-color:rgba(255,255,255,0.3);margin-top:10px;display:inline-flex;">Explorer →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="shop.html?cat=clothing" class="nav-link">👔 Vêtements <span class="arrow">▾</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Business & Formel</h4>
+                <ul>
+                  <li><a href="shop.html?cat=clothing&q=suit">Costumes Premium</a></li>
+                  <li><a href="shop.html?cat=clothing&q=shirt">Chemises Business</a></li>
+                  <li><a href="shop.html?cat=clothing&q=blazer">Blazers</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Sport & Casual</h4>
+                <ul>
+                  <li><a href="shop.html?cat=clothing&q=hoodie">Hoodies Cashmere</a></li>
+                  <li><a href="shop.html?cat=clothing&q=jacket">Vestes Techniques</a></li>
+                  <li><a href="shop.html?cat=clothing">Voir tout →</a></li>
+                </ul>
+              </div>
+              <div class="mega-menu-featured" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+                <span class="badge" style="background:rgba(255,215,0,0.2);color:gold;border:1px solid gold;">LUXE ✦</span>
+                <h3>Mode Haute Gamme</h3>
+                <p>Matériaux nobles, finitions parfaites</p>
+                <a href="shop.html?cat=clothing" class="btn btn-outline btn-sm" style="color:white;border-color:rgba(255,255,255,0.3);margin-top:10px;display:inline-flex;">Explorer →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="shop.html?tag=sale" class="nav-link" style="color:var(--primary);">🔥 Soldes</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn" id="open-search-btn" title="Rechercher">🔍</button>
+        <a href="account.html" class="wishlist-btn" style="position:relative;" title="Favoris">
+          🤍<span class="badge-count wishlist-count" style="display:none;background:var(--primary);">0</span>
+        </a>
+        <a href="account.html" class="account-btn" title="Mon compte">👤</a>
+        <button class="cart-btn" id="open-cart-btn">
+          🛒 <span>Panier</span>
+          <span class="badge-count cart-count" style="display:none;background:white;color:var(--primary);">0</span>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="shop.html?cat=sports" class="mobile-nav-link">⚽ Sports</a>
+    <a href="shop.html?cat=electronics" class="mobile-nav-link">📱 Électronique</a>
+    <a href="shop.html?cat=footwear" class="mobile-nav-link">👞 Chaussures Pro</a>
+    <a href="shop.html?cat=clothing" class="mobile-nav-link">👔 Vêtements</a>
+    <a href="shop.html?tag=sale" class="mobile-nav-link" style="color:var(--primary);">🔥 Soldes</a>
+    <div style="border-top:1px solid var(--border);margin:8px 0;padding-top:8px;">
+      <a href="account.html" class="mobile-nav-link">👤 Mon compte</a>
+      <a href="checkout.html" class="mobile-nav-link">🛒 Panier (<span class="cart-count">0</span>)</a>
+    </div>
+  </nav>
+</div>
+
+<div class="search-overlay" id="search-overlay">
+  <div class="container">
+    <div class="search-bar-inner">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <span style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);">Recherche rapide</span>
+        <button id="close-search-btn" style="cursor:pointer;font-size:18px;color:var(--text-muted);">✕</button>
+      </div>
+      <div class="search-input-wrap">
+        <span style="font-size:20px;">🔍</span>
+        <input type="text" id="main-search-input" placeholder="Rechercher produits, marques, catégories..." autocomplete="off">
+        <kbd style="padding:4px 8px;background:var(--surface-3);border-radius:4px;font-size:11px;color:var(--text-muted);">ESC</kbd>
+      </div>
+      <div class="search-tags">
+        <span style="font-size:12px;color:var(--text-muted);">Tendances:</span>
+        <span class="search-tag" onclick="triggerSearch('running')">Running</span>
+        <span class="search-tag" onclick="triggerSearch('earbuds')">Earbuds ANC</span>
+        <span class="search-tag" onclick="triggerSearch('suit')">Costume Premium</span>
+        <span class="search-tag" onclick="triggerSearch('smartwatch')">Smartwatch</span>
+        <span class="search-tag" onclick="triggerSearch('basketball')">Basketball</span>
+      </div>
+      <div id="search-results"></div>
+    </div>
+  </div>
+</div>
+
+<div class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h2>🛒 Mon Panier <span style="color:var(--text-muted);font-size:14px;font-weight:400;">(<span class="cart-count">0</span>)</span></h2>
+    <button class="cart-close" id="close-cart-btn">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items-container"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row"><span class="cart-total-label">Sous-total</span><span class="cart-total-value cart-total-display">--</span></div>
+    <div class="cart-total-row"><span class="cart-total-label">Livraison</span><span style="color:var(--success);font-weight:700;font-size:14px;">GRATUITE dès 50$</span></div>
+    <div class="divider"></div>
+    <div class="cart-total-row cart-grand-total"><span class="cart-total-label">Total estimé</span><span class="cart-total-value cart-total-display">--</span></div>
+    <a href="checkout.html" class="btn btn-primary btn-full btn-lg">🔒 Passer la commande</a>
+    <a href="shop.html" class="btn btn-ghost btn-full" style="text-align:center;margin-top:8px;">← Continuer les achats</a>
+    <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;">
+      <span style="font-size:11px;color:var(--text-muted);">🔒 SSL Sécurisé</span>
+      <span style="font-size:11px;color:var(--text-muted);">💳 Paiement sécurisé</span>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="cart-overlay" style="z-index:999;"></div>
+<div class="overlay" id="quickview-overlay" style="z-index:1001;">
+  <div class="modal" id="quickview-modal" style="max-width:760px;position:relative;"></div>
+</div>
+<div class="toast-container" id="toast-container"></div>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span id="hero-badge">🆕 Nouveautés 2026</span>
+      </div>
+      <h1 class="hero-title display-title" id="hero-title">
+        PERFORM<br><span class="line-accent">BEYOND</span><br>
+        <span class="line-outline">LIMITS</span>
+      </h1>
+      <p class="hero-desc" id="hero-desc">Découvrez notre collection exclusive d'articles sportifs, électronique, chaussures professionnelles et vêtements premium. Livraison dans 12+ pays.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary btn-lg" id="hero-cta">🛍️ Explorer la Collection</a>
+        <a href="shop.html?tag=sale" class="btn btn-outline btn-lg">🔥 Voir les Soldes</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span data-count="50000">5000</span><span>+</span></div>
+          <div class="hero-stat-label">Clients Satisfaits</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span data-count="2500">250</span><span>+</span></div>
+          <div class="hero-stat-label">Produits Premium</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span data-count="120">12</span><span>+</span></div>
+          <div class="hero-stat-label">Pays Livrés</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">4.6<span>⭐</span></div>
+          <div class="hero-stat-label">Note Moyenne</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-product-showcase">
+      <div class="hero-circle hero-circle-1"></div>
+      <div class="hero-circle hero-circle-2"></div>
+      <div class="hero-main-product" id="hero-emoji">👟</div>
+      <div class="hero-floating-card" style="top:15%;right:8%;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:28px;">🎧</span>
+          <div>
+            <div style="font-size:12px;font-weight:700;">Earbuds Pro</div>
+            <div style="font-size:13px;color:var(--primary);font-family:var(--font-condensed);font-weight:800;">$299</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-floating-card" style="bottom:22%;right:4%;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="color:var(--gold);">★★★★★</span>
+          <span style="font-size:13px;font-weight:600;">4.6/5 — 234 avis</span>
+        </div>
+      </div>
+      <div class="hero-floating-card" style="bottom:35%;left:2%;">
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+          <span style="color:var(--success);">✅</span>
+          <span>Livraison en 24h disponible</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero nav buttons -->
+  <button id="hero-prev" style="position:absolute;left:24px;bottom:40px;z-index:3;width:44px;height:44px;background:var(--surface-2);border:1px solid var(--border);border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;transition:var(--transition);" onmouseover="this.style.background='var(--primary)'" onmouseout="this.style.background='var(--surface-2)'">‹</button>
+  <button id="hero-next" style="position:absolute;left:80px;bottom:40px;z-index:3;width:44px;height:44px;background:var(--surface-2);border:1px solid var(--border);border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;transition:var(--transition);" onmouseover="this.style.background='var(--primary)'" onmouseout="this.style.background='var(--surface-2)'">›</button>
+  <div style="position:absolute;left:140px;bottom:52px;z-index:3;display:flex;gap:6px;">
+    <span class="hero-dot" style="width:8px;height:8px;border-radius:50%;background:var(--primary);cursor:pointer;"></span>
+    <span class="hero-dot" style="width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;"></span>
+    <span class="hero-dot" style="width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;"></span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="trust-icon">🚚</span>
+        <div class="trust-text"><h4>Livraison Mondiale</h4><p>12+ pays, suivi en temps réel</p></div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">↩️</span>
+        <div class="trust-text"><h4>Retour 30 Jours</h4><p>Satisfait ou remboursé</p></div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <div class="trust-text"><h4>Paiement Sécurisé</h4><p>SSL 256-bit encryption</p></div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">🏆</span>
+        <div class="trust-text"><h4>Qualité Garantie</h4><p>Produits certifiés premium</p></div>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-icon">💬</span>
+        <div class="trust-text"><h4>Support 24/7</h4><p>Équipe disponible en permanence</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="section categories-section">
+  <div class="container">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-eyebrow">Explorer par catégorie</div>
+        <h2 class="section-title">Nos <span style="color:var(--primary);">Collections</span></h2>
+      </div>
+      <a href="shop.html" class="btn btn-outline">Voir tout →</a>
+    </div>
+    <div class="categories-track" id="categories-track"></div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" style="background:var(--secondary);">
+  <div class="container">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-eyebrow">Sélection du moment</div>
+        <h2 class="section-title">Produits <span style="color:var(--primary);">Vedettes</span></h2>
+      </div>
+      <a href="shop.html" class="btn btn-outline">Voir tout →</a>
+    </div>
+    <div id="featured-products" class="grid grid-4"></div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="promo-banner">
+  <div class="container">
+    <div class="promo-content">
+      <div>
+        <div class="promo-eyebrow">⚡ Offre Limitée — Flash Sale</div>
+        <h2 class="promo-title display-title">JUSQU'À<br><span style="color:var(--gold);">-40%</span></h2>
+        <p class="promo-desc">Sur une sélection exclusive de chaussures professionnelles, électronique et vêtements premium. Ne manquez pas cette opportunité!</p>
+        <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+          <a href="shop.html?tag=sale" class="btn" style="background:white;color:var(--primary);font-family:var(--font-condensed);font-weight:800;font-size:15px;padding:14px 32px;">🔥 Profiter des Soldes</a>
+          <a href="shop.html" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">Explorer →</a>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;opacity:0.7;">Codes promo: </span>
+          <code style="padding:4px 10px;background:rgba(255,255,255,0.15);border-radius:4px;font-size:13px;font-weight:700;">NOVARYX10</code>
+          <code style="padding:4px 10px;background:rgba(255,255,255,0.15);border-radius:4px;font-size:13px;font-weight:700;">WELCOME20</code>
+        </div>
+      </div>
+      <div data-countdown style="text-align:center;">
+        <div style="font-family:var(--font-condensed);font-size:13px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;opacity:0.7;margin-bottom:16px;">L'offre se termine dans</div>
+        <div class="countdown">
+          <div class="countdown-unit"><div class="countdown-num countdown-days">02</div><div class="countdown-label">Jours</div></div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit"><div class="countdown-num countdown-hours">06</div><div class="countdown-label">Heures</div></div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit"><div class="countdown-num countdown-mins">33</div><div class="countdown-label">Minutes</div></div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit"><div class="countdown-num countdown-secs">00</div><div class="countdown-label">Secondes</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="section" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-eyebrow">Tout juste arrivé</div>
+        <h2 class="section-title">Nouvelles <span style="color:var(--accent);">Arrivées</span></h2>
+      </div>
+      <a href="shop.html?tag=new" class="btn btn-outline">Voir tout →</a>
+    </div>
+    <div id="new-arrivals" class="grid grid-4"></div>
+  </div>
+</section>
+
+<!-- FLASH SALE -->
+<section class="section" style="background:var(--secondary);">
+  <div class="container">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-eyebrow">Économies maximales</div>
+        <h2 class="section-title">🔥 Promotions <span style="color:var(--primary);">du Jour</span></h2>
+      </div>
+      <a href="shop.html?tag=sale" class="btn btn-primary">Voir toutes les promos</a>
+    </div>
+    <div id="flash-sale-products" class="grid grid-4"></div>
+  </div>
+</section>
+
+<!-- 4 CATEGORY GRID -->
+<section class="section" style="background:var(--surface);">
+  <div class="container">
+    <div class="section-header text-center" style="max-width:600px;margin:0 auto 48px;">
+      <div class="section-eyebrow">Nos univers</div>
+      <h2 class="section-title">Tout ce dont vous <span style="color:var(--primary);">avez besoin</span></h2>
+    </div>
+    <div class="grid grid-2" style="gap:24px;">
+      <a href="shop.html?cat=sports" class="card" style="position:relative;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;padding:32px;background:linear-gradient(135deg,#0a0a0f,#1a1a24);text-decoration:none;">
+        <span style="position:absolute;top:50%;right:10%;transform:translateY(-50%);font-size:120px;opacity:0.4;">⚽</span>
+        <div style="position:relative;z-index:2;">
+          <span class="badge badge-primary" style="margin-bottom:12px;">120+ Produits</span>
+          <h3 style="font-size:32px;margin-bottom:8px;">Sports & <br>Performance</h3>
+          <p style="color:var(--text-secondary);font-size:14px;">Équipements pro pour champions</p>
+          <span class="btn btn-primary btn-sm" style="margin-top:16px;display:inline-flex;">Explorer →</span>
+        </div>
+      </a>
+      <a href="shop.html?cat=electronics" class="card" style="position:relative;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;padding:32px;background:linear-gradient(135deg,#001a2e,#0a2040);text-decoration:none;">
+        <span style="position:absolute;top:50%;right:10%;transform:translateY(-50%);font-size:120px;opacity:0.4;">🎧</span>
+        <div style="position:relative;z-index:2;">
+          <span class="badge badge-accent" style="margin-bottom:12px;">Tech Premium</span>
+          <h3 style="font-size:32px;margin-bottom:8px;">Électronique<br>& High-Tech</h3>
+          <p style="color:var(--text-secondary);font-size:14px;">Les meilleures innovations 2026</p>
+          <span class="btn btn-accent btn-sm" style="margin-top:16px;display:inline-flex;">Explorer →</span>
+        </div>
+      </a>
+      <a href="shop.html?cat=footwear" class="card" style="position:relative;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;padding:32px;background:linear-gradient(135deg,#1a1208,#2d1e08);text-decoration:none;">
+        <span style="position:absolute;top:50%;right:10%;transform:translateY(-50%);font-size:120px;opacity:0.4;">👞</span>
+        <div style="position:relative;z-index:2;">
+          <span class="badge badge-gold" style="margin-bottom:12px;">Artisanat Premium</span>
+          <h3 style="font-size:32px;margin-bottom:8px;">Chaussures<br>Professionnelles</h3>
+          <p style="color:var(--text-secondary);font-size:14px;">Confort & élégance au quotidien</p>
+          <span class="btn btn-sm" style="margin-top:16px;display:inline-flex;background:var(--gold);color:#000;">Explorer →</span>
+        </div>
+      </a>
+      <a href="shop.html?cat=clothing" class="card" style="position:relative;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;padding:32px;background:linear-gradient(135deg,#0f0f1a,#1a1a2e);text-decoration:none;">
+        <span style="position:absolute;top:50%;right:10%;transform:translateY(-50%);font-size:120px;opacity:0.4;">🤵</span>
+        <div style="position:relative;z-index:2;">
+          <span class="badge" style="background:rgba(255,215,0,0.15);color:var(--gold);border:1px solid rgba(255,215,0,0.3);margin-bottom:12px;">Qualité Luxe</span>
+          <h3 style="font-size:32px;margin-bottom:8px;">Vêtements<br>de Qualité</h3>
+          <p style="color:var(--text-secondary);font-size:14px;">Mode, élégance et performance</p>
+          <span class="btn btn-outline btn-sm" style="margin-top:16px;display:inline-flex;">Explorer →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BESTSELLERS -->
+<section class="section" style="background:var(--secondary);">
+  <div class="container">
+    <div class="section-header flex-between">
+      <div>
+        <div class="section-eyebrow">Approuvés par nos clients</div>
+        <h2 class="section-title">⭐ Meilleures <span style="color:var(--gold);">Ventes</span></h2>
+      </div>
+      <a href="shop.html?tag=bestseller" class="btn btn-outline">Voir tout →</a>
+    </div>
+    <div id="bestsellers-products" class="grid grid-4"></div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="section brands-section">
+  <div class="container">
+    <div class="section-header text-center" style="margin-bottom:32px;">
+      <div class="section-eyebrow">Nos partenaires officiels</div>
+      <h2 class="section-title">Marques de <span style="color:var(--primary);">Confiance</span></h2>
+    </div>
+    <div class="brands-track">
+      <div class="brands-inner"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header text-center" style="max-width:500px;margin:0 auto 48px;">
+      <div class="section-eyebrow">Avis clients vérifiés</div>
+      <h2 class="section-title">Ce que disent nos <span style="color:var(--accent);">Clients</span></h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote">"Les chaussures médicales sont incroyables! Après 12h debout, mes pieds ne souffrent plus. Qualité exceptionnelle, je recommande vivement à tous les professionnels de santé."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">👩🏽</div>
+          <div>
+            <div class="author-name">Dr. Aminata S.</div>
+            <div class="author-location">🇫🇷 Paris, France</div>
+          </div>
+          <div class="stars" style="margin-left:auto;">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote">"J'ai commandé des écouteurs ANC et un costume premium. La livraison était rapide en Côte d'Ivoire et les produits sont exactement comme sur le site. NOVARYX est fiable!"</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨🏿</div>
+          <div>
+            <div class="author-name">Kofi M.</div>
+            <div class="author-location">🇨🇮 Abidjan, CI</div>
+          </div>
+          <div class="stars" style="margin-left:auto;">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote">"Le service client est au top! J'avais une question sur le guide des tailles, ils ont répondu en moins de 2h. Les chaussures de running sont fantastiques pour mes entraînements."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">👨🏻</div>
+          <div>
+            <div class="author-name">Marco R.</div>
+            <div class="author-location">🇧🇷 São Paulo, BR</div>
+          </div>
+          <div class="stars" style="margin-left:auto;">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section section-sm">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div>
+        <div class="section-eyebrow">Restez informé</div>
+        <h2 style="font-size:32px;margin-bottom:8px;">Newsletter <span style="color:var(--primary);">NOVARYX</span></h2>
+        <p style="color:var(--text-secondary);font-size:14px;">Abonnez-vous pour recevoir nos offres exclusives, nouveautés et codes promo en avant-première. -10% sur votre première commande!</p>
+      </div>
+      <div>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Votre adresse email..." required>
+          <button type="submit" class="btn btn-primary">✉️ S'abonner</button>
+        </form>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">🔒 Vos données sont protégées. Désinscription facile à tout moment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom:16px;display:inline-flex;">
+          <div class="logo-icon">N</div>
+          <div class="logo-text">
+            <span class="logo-name">NOVARYX</span>
+            <span class="logo-tagline">Premium Store</span>
+          </div>
+        </a>
+        <p>Votre destination premium pour les articles sportifs, l'électronique, les chaussures professionnelles et les vêtements de qualité. Livraison dans 120+ pays.</p>
+        <div class="social-links">
+          <div class="social-link" title="Facebook">📘</div>
+          <div class="social-link" title="Instagram">📸</div>
+          <div class="social-link" title="TikTok">🎵</div>
+          <div class="social-link" title="YouTube">▶️</div>
+          <div class="social-link" title="WhatsApp">💬</div>
+        </div>
+        <div style="margin-top:20px;padding:14px;background:var(--surface-2);border-radius:var(--radius-lg);font-size:12px;color:var(--text-muted);">
+          📞 +229 (01XXXXXXXX) NOVARYX<br>
+          📧 support@novaryx.store<br>
+          ⏰ Support 24h/7j
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Boutique</h4>
+        <div class="footer-links">
+          <a href="shop.html?cat=sports">Articles Sportifs</a>
+          <a href="shop.html?cat=electronics">Électronique</a>
+          <a href="shop.html?cat=footwear">Chaussures Pro</a>
+          <a href="shop.html?cat=clothing">Vêtements</a>
+          <a href="shop.html?tag=new">Nouveautés</a>
+          <a href="shop.html?tag=sale">Promotions 🔥</a>
+          <a href="shop.html?tag=bestseller">Meilleures Ventes</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="#">Livraison & Retours</a>
+          <a href="#">Guide des Tailles</a>
+          <a href="#">Programme Fidélité</a>
+          <a href="#">Carte Cadeau</a>
+          <a href="#">Click & Collect</a>
+          <a href="#">Commande Pro / B2B</a>
+          <a href="#">Personnalisation</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Compte</h4>
+        <div class="footer-links">
+          <a href="account.html">Mon Compte</a>
+          <a href="account.html">Mes Commandes</a>
+          <a href="account.html">Ma Liste de Souhaits</a>
+          <a href="account.html">Mes Adresses</a>
+          <a href="#">Parrainage</a>
+          <a href="#">Avis Clients</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>À propos</h4>
+        <div class="footer-links">
+          <a href="#">Notre Histoire</a>
+          <a href="#">Presse & Médias</a>
+          <a href="#">Carrières</a>
+          <a href="#">Partenaires</a>
+          <a href="#">Politique RGPD</a>
+          <a href="#">CGV</a>
+          <a href="#">Mentions légales</a>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="font-family:var(--font-condensed);font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;">Certifications</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="padding:4px 8px;background:var(--surface-2);border:1px solid var(--border);border-radius:4px;font-size:10px;color:var(--text-muted);">🔒 SSL</span>
+            <span style="padding:4px 8px;background:var(--surface-2);border:1px solid var(--border);border-radius:4px;font-size:10px;color:var(--text-muted);">✅ ISO 9001</span>
+            <span style="padding:4px 8px;background:var(--surface-2);border:1px solid var(--border);border-radius:4px;font-size:10px;color:var(--text-muted);">🌍 RGPD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 NOVARYX Store. Tous droits réservés.</span>
+      <div class="payment-methods">
+        <span style="font-size:12px;color:var(--text-muted);">Paiements acceptés:</span>
+        <span class="payment-badge">Visa</span>
+        <span class="payment-badge">Mastercard</span>
+        <span class="payment-badge">PayPal</span>
+        <span class="payment-badge">Apple Pay</span>
+        <span class="payment-badge">Stripe</span>
+        <span class="payment-badge">Mobile Money</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script>
+function triggerSearch(term) {
+  const inp = document.getElementById('main-search-input');
+  if (inp) { inp.value = term; inp.dispatchEvent(new Event('input')); openSearch(); }
+}
+</script>
+</body>
+</html>
